@@ -1,0 +1,92 @@
+% Copyright (c) 2017 Pedro Souza
+% Released under the MIT License (http://opensource.org/licenses/MIT)
+
+% Silencing some errors, cf http://tex.stackexchange.com/a/60995
+\RequirePackage[]{silence}
+\WarningsOff[hyperref]
+
+% Sans-serif
+\renewcommand{\familydefault}{\sfdefault}
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{color}
+\usepackage[top=1cm, bottom=1cm, left=1.8cm, right=1.8cm]{geometry}
+\setlength{\hintscolumnwidth}{2.8cm}
+\nopagenumbers{}
+
+% Programming Languages would be blue and in italic
+\definecolor{plblue}{rgb}{0.22,0.45,0.70}% light blue
+\newcommand{\pl}[1]{\textit{\color{plblue} #1}}
+
+% Identity
+\firstname{Pedro}
+\familyname{Souza}
+\title{Full Stack Web Developer}
+\address{Astoria, New York}{}
+\email{posouza@gmail.com}
+\homepage{https://posouza.github.io/profile}
+% \phone{+1 (917) 794-3994}
+\photo[60pt][0pt]{XPic.jpg}
+\extrainfo{\raisebox{-1mm}{\includegraphics[height=11pt]{octocatvector.eps}}
+    \href{https://github.com/posouza}{github.com/posouza}}
+
+% Rock'n roll!
+\begin{document}
+
+\maketitle
+
+% \section{Objective}
+% \cvline{2014}{Design, build and ship awesome web products with great clients using Lean \& Agile}
+\section{Profile}
+Recent coding bootcamp graduate at \pl{Le Wagon}. Ruby on Rails Full Stack Developer with considerable experience in technology. I can deliver \pl{Front-End} and \pl{Back-End} projects with with payment integration, admin interface, user management, mailer, geolocation and many other features.
+
+\section{Objective}
+I'm looking to work as a Full Stack Developer at a company where I can develop my Front-End and Back-End skills so we can both grow together.
+
+\section{Web Development Summary}
+\begin{itemize}
+\item Algorithms and Programming with Ruby.
+\item Web Application Development with Ruby on Rails.
+\item Web Application Diagram (MVC, user stories, database schema).
+\item SQL, mySQL and PostgreSQL Database
+\item Front-End Development: HTML, CSS, Javascript (jQuery) + Boostrap
+\item Collaborative coding with Git and Github
+\item Deployment on Heroku
+\item Team project: built a finance platform for SMEs to pre-finance their open invoices in 10 days: \pl{www.advalori.com}
+\end{itemize}
+
+\pl{Technical environment}: Ruby, ruby on rails, Postgres, HTML, CSS, Javascript, Jquery, Bootstrap, Git / Github, gem (devise, activeadmin, pundit, rails admin, stripe, geocoder…)
+
+\section{Work Experience}
+\cventry{2014-2016}{Linux System Admin}{Equinix Data Centers}{Rio de Janeiro, Brazil}{}{
+  Setup, manage, and maintain various Linux based IT servers (hardware, operating systems), Virtual servers, Storage sub-systems, Monitoring and Backup Infrastructure. Support issues like network TCP/IP, Internet application, Firewall, LoadBalance, WebProxy and network security.
+}
+
+\cventry{2010-2013}{Network Support Engineer}{012 Global Inc.}{Boca Raton FL, USA}{}{
+  Responsible for support of SIP, RTP, UDP and TCP/IP protocols using Linux and Wireshark. Troubleshoot and isolate network issues and coordinate problem resolution.
+  Responsible to install, configure and troubleshoot network, hardware and software issues for in house team members.
+}
+
+\cventry{2007-2010}{Client Support Services}{Citigrooup}{Tampa FL, USA}{}{
+  Responsible for the daily processing and support of Brazilian and Mexican/Latam Settlements for Citigroup global client base. Provided software and front end support to all Citi’s global client base.
+}
+
+\cventry{2003-2006}{Network Technical Support}{Dendrite International}{Bedminster NJ, USA}{}{
+ Provided effective and consistent technical phone support for Pharmaceutical Companies like,Pfizer, Bristol-Myers Squibb, Fujisawa and others. Responsible for site setup activities to first time users including connectivity, hardware and software.
+}
+
+\section{Education}
+
+\cventry{2017-Present}{Western Governors University}{B.S. Software Development}{Salt Lake City,UT USA}{
+    }{Currently enrolled as a part-time student.}
+    
+\cventry{2003-2004}{The Chubb Institute}{Network Systems Technician}{Parsippany,NJ USA}{
+    }{Graduated with Honors/ GPA: 4.0}
+    
+\section{Languages}
+Fluent in \pl{English}, \pl{Portuguese} and communicate effectively in \pl{Spanish}.
+
+\end{document}
